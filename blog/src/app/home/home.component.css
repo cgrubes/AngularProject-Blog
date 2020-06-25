@@ -1,0 +1,13 @@
+h2{
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+img{
+    max-width: fit-content;
+  }
+
+.wrapper{
+    background-color: rgb(243, 197, 112);
+}

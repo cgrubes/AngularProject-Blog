@@ -1,0 +1,31 @@
+<div class="wrapper">
+
+<h2>The Sweet (Potato) Life!</h2>
+
+<div class="row d-flex justify-content-around">
+
+    <div class="card col-md-5 m-2 py-2" *ngFor="let fact of facts; index as factId">
+        
+        <h5 class="card-title text-center mt-1">  
+            {{ fact.factName }}
+          </h5>
+        <img class="card-img-top" src="{{fact.image}}" alt="Card image cap" [title]="fact.factName">
+        <div id="shortDesc">
+            {{fact.short}}
+            <br>
+          <div class="d-flex justify-content-center">
+        <a href="#" class="btn btn-primary mt-3" [routerLink]="['/facts', factId]" >Read More</a>
+      </div>
+    </div>
+        <div class="card-body">
+                   
+         
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
